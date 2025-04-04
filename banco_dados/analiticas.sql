@@ -1,4 +1,4 @@
--- 🔎 Top 10 operadoras com maiores despesas no último trimestre
+--10 operadoras com maiores despesas no ultimo trimestre
 WITH ultimo_trimestre AS (
     SELECT ano, trimestre
     FROM demonstracoes_contabeis
@@ -20,7 +20,7 @@ ORDER BY despesa_eventos DESC
 LIMIT 10;
 
 
--- 🔎 Top 10 operadoras com maiores despesas no último ano (soma dos 4 trimestres)
+-- 10 operadoras com maiores despesas no ultimo ano (soma dos 4 trimestres)
 WITH ultimo_ano AS (
     SELECT ano
     FROM demonstracoes_contabeis
