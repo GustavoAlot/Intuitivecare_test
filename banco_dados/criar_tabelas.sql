@@ -41,7 +41,7 @@ CREATE TABLE IF NOT EXISTS demonstracoes_contabeis_staging (
 -- =============================
 CREATE TABLE IF NOT EXISTS demonstracoes_contabeis (
     id SERIAL PRIMARY KEY,
-    operadora_id INTEGER, -- opcional, se quiser associar via chave estrangeira
+    operadora_id INTEGER, 
     data DATE,
     ano INTEGER,
     trimestre INTEGER,
