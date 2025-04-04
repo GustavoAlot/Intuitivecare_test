@@ -12,7 +12,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Tenta carregar o CSV
+# carrega CSV
 try:
     df = pd.read_csv("operadoras.csv", sep=";", dtype=str).fillna("")
 except Exception as e:
