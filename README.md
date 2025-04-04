@@ -13,22 +13,28 @@ Entrega realizada em 7 dias corridos, conforme solicitado.
 
 ```
 intuitivecare_test/
-├── banco_dados/                     # Scripts SQL e dados da ANS
+├── banco_dados/
+│   ├── analiticas.sql
 │   ├── criar_tabelas.sql
 │   ├── importar_dados.sql
-│   ├── analiticas.sql
-│   └── dados.zip                    # 📦 Arquivos CSV compactados
-├── transformacao_dados/            # Extração de dados do PDF do Anexo I
+│   ├── dados.zip          # Os CSVs compactados
+├── transformacao_dados/
 │   ├── extrair_tabela.py
 │   ├── substituicoes.csv
-│   └── Teste_NomeCandidato.zip
-├── api_vue/                        # API Python (FastAPI) + frontend Vue.js
+│   └── Teste_Gustavo_Fernandez.zip   # Arquivo .zip com CSV processados
+├── web_scraping/
+│   ├── baixar_e_zipar.py
+│   ├── pdfs.zip           # Arquivo ZIP com os PDFs baixados
+│   └── requisitos.txt
+├── api_vue/
 │   ├── backend/
 │   │   ├── main.py
 │   │   └── operadoras.csv
 │   ├── frontend/
-│   │   └── (Vue 3 com fetch ao backend)
+│   │   └── (Vue 3 configurado)
 │   └── intuitivecare_api_postman.json
+├── README.md
+
 ```
 
 ---
@@ -69,7 +75,7 @@ Os arquivos CSV estão compactados no arquivo `banco_dados/dados.zip`. Para util
 banco_dados/
 └── dados/
     ├── operadoras.csv
-    ├── demonstracoes_1T2023.csv
+    ├── 1T2023.csv
     └── ...
 ```
 
